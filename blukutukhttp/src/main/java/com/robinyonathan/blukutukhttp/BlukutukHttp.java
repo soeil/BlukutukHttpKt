@@ -59,10 +59,14 @@ public class BlukutukHttp {
 
     private File downloadPath;
 
+    public final static int POST = 1;
+    public final static int PUT = 2;
+
     private int responseCode = 200;
     private int connectionTimeOut = 10;
     private int writeTimeOut = 10;
     private int readTimeOut = 10;
+    private int bodyType = POST;
 
     private ProgressBar progressBar;
 
@@ -85,6 +89,13 @@ public class BlukutukHttp {
         this.requestBody = requestBody;
     }
 
+    public BlukutukHttp(Activity activity, Uri.Builder builder, RequestBody requestBody, int bodyType) {
+        this.activity = activity;
+        this.builder = builder;
+        this.requestBody = requestBody;
+        this.bodyType = bodyType;
+    }
+
     public BlukutukHttp(Activity activity, Uri.Builder builder) {
         this.activity = activity;
         this.builder = builder;
@@ -95,6 +106,13 @@ public class BlukutukHttp {
         this.activity = activity;
         this.url = url;
         this.requestBody = requestBody;
+    }
+
+    public BlukutukHttp(Activity activity, String url, RequestBody requestBody, int bodyType) {
+        this.activity = activity;
+        this.url = url;
+        this.requestBody = requestBody;
+        this.bodyType = bodyType;
     }
 
     public BlukutukHttp(Activity activity, String url) {
@@ -301,6 +319,11 @@ public class BlukutukHttp {
             }
 
             @Override
+            public int getBodyType() {
+                return bodyType;
+            }
+
+            @Override
             public RequestBody requestBody() {
                 return requestBody;
             }
@@ -414,6 +437,11 @@ public class BlukutukHttp {
             @Override
             public File downloadPath() {
                 return downloadPath;
+            }
+
+            @Override
+            public int getBodyType() {
+                return bodyType;
             }
 
             @Override
@@ -582,11 +610,20 @@ public class BlukutukHttp {
                     .build();
 
             if (okHttpInterface.requestBody() != null) {
-                request = new Request.Builder()
-                        .url(urlTemp)
+                if (okHttpInterface.getBodyType() == POST) {
+                    request = new Request.Builder()
+                            .url(urlTemp)
 //                    .post((RequestBody) objects[1])
-                        .post(new ProgressRequestBody(okHttpInterface.requestBody(), progress -> okHttpInterface.progress(progress)))
-                        .build();
+                            .post(new ProgressRequestBody(okHttpInterface.requestBody(), progress -> okHttpInterface.progress(progress)))
+                            .build();
+                }
+                if (okHttpInterface.getBodyType() == PUT) {
+                    request = new Request.Builder()
+                            .url(urlTemp)
+//                    .post((RequestBody) objects[1])
+                            .put(new ProgressRequestBody(okHttpInterface.requestBody(), progress -> okHttpInterface.progress(progress)))
+                            .build();
+                }
             }
             try {
                 Response response = client.newCall(request).execute();
