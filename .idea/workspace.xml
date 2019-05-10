@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ccbd3607-a782-431f-8dcf-626d36519910" name="Default Changelist" comment="" />
+    <list default="true" id="ccbd3607-a782-431f-8dcf-626d36519910" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blukutukhttp/blukutukhttp.iml" beforeDir="false" afterPath="$PROJECT_DIR$/blukutukhttp/blukutukhttp.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blukutukhttp/src/main/java/com/robinyonathan/blukutukhttp/BlukutukHttp.java" beforeDir="false" afterPath="$PROJECT_DIR$/blukutukhttp/src/main/java/com/robinyonathan/blukutukhttp/BlukutukHttp.java" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,14 +29,14 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/blukutukhttp/src/main/java/com/robinyonathan/blukutukhttp/BlukutukHttp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="560">
-              <caret line="625" column="17" selection-start-line="625" selection-start-column="17" selection-end-line="625" selection-end-column="17" />
+            <state relative-caret-position="446">
+              <caret line="629" column="41" lean-forward="true" selection-start-line="629" selection-start-column="41" selection-end-line="629" selection-end-column="41" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#9660#9661#0" expanded="true" />
-                <element signature="e#9700#9701#0" expanded="true" />
+                <element signature="e#9707#9708#0" expanded="true" />
                 <element signature="e#13304#13305#0" expanded="true" />
-                <element signature="e#13344#13345#0" expanded="true" />
+                <element signature="e#13351#13352#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -77,27 +81,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane" />
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="AndroidView">
         <subPane>
           <expand>
-            <path>
-              <item name="BlukutukHttpKt" type="1abcf292:AndroidViewProjectNode" />
-              <item name="blukutukhttp" type="feadf853:AndroidModuleNode" />
-            </path>
-            <path>
-              <item name="BlukutukHttpKt" type="1abcf292:AndroidViewProjectNode" />
-              <item name="blukutukhttp" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-            </path>
-            <path>
-              <item name="BlukutukHttpKt" type="1abcf292:AndroidViewProjectNode" />
-              <item name="blukutukhttp" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="blukutukhttp" type="cbb59c9e:AndroidPsiDirectoryNode" />
-            </path>
             <path>
               <item name="BlukutukHttpKt" type="1abcf292:AndroidViewProjectNode" />
               <item name="Gradle Scripts" type="ae0cef3a:AndroidBuildScriptsGroupNode" />
@@ -106,6 +92,9 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -203,7 +192,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="2048" height="1129" extended-state="6" />
+    <frame x="0" y="23" width="2048" height="1129" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
@@ -254,24 +243,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/blukutukhttp/src/main/java/com/robinyonathan/blukutukhttp/BlukutukHttp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="446">
+          <caret line="629" column="41" lean-forward="true" selection-start-line="629" selection-start-column="41" selection-end-line="629" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#9660#9661#0" expanded="true" />
+            <element signature="e#9707#9708#0" expanded="true" />
+            <element signature="e#13304#13305#0" expanded="true" />
+            <element signature="e#13351#13352#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/blukutukhttp/src/main/java/com/robinyonathan/blukutukhttp/OkHttpInterface.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blukutukhttp/src/main/java/com/robinyonathan/blukutukhttp/BlukutukHttp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="560">
-          <caret line="625" column="17" selection-start-line="625" selection-start-column="17" selection-end-line="625" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#9660#9661#0" expanded="true" />
-            <element signature="e#9700#9701#0" expanded="true" />
-            <element signature="e#13304#13305#0" expanded="true" />
-            <element signature="e#13344#13345#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
