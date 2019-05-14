@@ -614,22 +614,47 @@ public class BlukutukHttp {
                 if (okHttpInterface.getBodyType() == POST) {
                     request = new Request.Builder()
                             .url(urlTemp)
-//                    .post((RequestBody) objects[1])
                             .post(new ProgressRequestBody(okHttpInterface.requestBody(), progress -> okHttpInterface.progress(progress)))
                             .build();
+                    if (okHttpInterface.requestBody().contentType() != null) {
+                        request = new Request.Builder()
+                                .url(urlTemp)
+                                .header("Content-Type", okHttpInterface.requestBody().contentType().toString())
+                                .post(new ProgressRequestBody(okHttpInterface.requestBody(), progress -> okHttpInterface.progress(progress)))
+                                .build();
+                    }
                 }
                 if (okHttpInterface.getBodyType() == PUT) {
                     request = new Request.Builder()
                             .url(urlTemp)
-//                    .post((RequestBody) objects[1])
                             .put(new ProgressRequestBody(okHttpInterface.requestBody(), progress -> okHttpInterface.progress(progress)))
                             .build();
+                    if (okHttpInterface.requestBody().contentType() != null) {
+                        request = new Request.Builder()
+                                .url(urlTemp)
+                                .header("Content-Type", okHttpInterface.requestBody().contentType().toString())
+                                .put(new ProgressRequestBody(okHttpInterface.requestBody(), progress -> okHttpInterface.progress(progress)))
+                                .build();
+                    }
                 }
                 if (okHttpInterface.getBodyType() == DELETE) {
                     request = new Request.Builder()
                             .url(urlTemp)
-//                    .post((RequestBody) objects[1])
                             .delete(new ProgressRequestBody(okHttpInterface.requestBody(), progress -> okHttpInterface.progress(progress)))
+                            .build();
+                    if (okHttpInterface.requestBody().contentType() != null) {
+                        request = new Request.Builder()
+                                .url(urlTemp)
+                                .header("Content-Type", okHttpInterface.requestBody().contentType().toString())
+                                .delete(new ProgressRequestBody(okHttpInterface.requestBody(), progress -> okHttpInterface.progress(progress)))
+                                .build();
+                    }
+                }
+            } else {
+                if (okHttpInterface.getBodyType() == DELETE) {
+                    request = new Request.Builder()
+                            .url(urlTemp)
+                            .delete()
                             .build();
                 }
             }

@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ccbd3607-a782-431f-8dcf-626d36519910" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blukutukhttp/blukutukhttp.iml" beforeDir="false" afterPath="$PROJECT_DIR$/blukutukhttp/blukutukhttp.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blukutukhttp/src/main/java/com/robinyonathan/blukutukhttp/BlukutukHttp.java" beforeDir="false" afterPath="$PROJECT_DIR$/blukutukhttp/src/main/java/com/robinyonathan/blukutukhttp/BlukutukHttp.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -29,14 +28,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/blukutukhttp/src/main/java/com/robinyonathan/blukutukhttp/BlukutukHttp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="446">
-              <caret line="629" column="41" lean-forward="true" selection-start-line="629" selection-start-column="41" selection-end-line="629" selection-end-column="41" />
+            <state relative-caret-position="607">
+              <caret line="648" column="114" selection-start-line="648" selection-start-column="114" selection-end-line="648" selection-end-column="114" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#9660#9661#0" expanded="true" />
-                <element signature="e#9707#9708#0" expanded="true" />
-                <element signature="e#13304#13305#0" expanded="true" />
-                <element signature="e#13351#13352#0" expanded="true" />
+                <element signature="e#23293#23294#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -81,20 +77,10 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView">
-        <subPane>
-          <expand>
-            <path>
-              <item name="BlukutukHttpKt" type="1abcf292:AndroidViewProjectNode" />
-              <item name="Gradle Scripts" type="ae0cef3a:AndroidBuildScriptsGroupNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane" />
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -102,7 +88,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="not.eligible.for.single.variant.sync" value="true" />
     <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
-    <property name="sync.plugin.last.upgrade.timestamp" value="1557458533832" />
+    <property name="sync.plugin.last.upgrade.timestamp" value="1557747109479" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -196,7 +182,7 @@
     <editor active="true" />
     <layout>
       <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.32901296" />
+      <window_info content_ui="combo" id="Project" order="1" weight="0.32901296" />
       <window_info id="Structure" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Build Variants" order="4" side_tool="true" />
@@ -245,14 +231,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/blukutukhttp/src/main/java/com/robinyonathan/blukutukhttp/BlukutukHttp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="446">
-          <caret line="629" column="41" lean-forward="true" selection-start-line="629" selection-start-column="41" selection-end-line="629" selection-end-column="41" />
+        <state relative-caret-position="607">
+          <caret line="648" column="114" selection-start-line="648" selection-start-column="114" selection-end-line="648" selection-end-column="114" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#9660#9661#0" expanded="true" />
-            <element signature="e#9707#9708#0" expanded="true" />
-            <element signature="e#13304#13305#0" expanded="true" />
-            <element signature="e#13351#13352#0" expanded="true" />
+            <element signature="e#23293#23294#0" expanded="true" />
           </folding>
         </state>
       </provider>
