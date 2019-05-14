@@ -61,7 +61,7 @@ public class BlukutukHttp {
 
     public final static int POST = 1;
     public final static int PUT = 2;
-    public final static int DELETE = 2;
+    public final static int DELETE = 3;
 
     private int responseCode = 200;
     private int connectionTimeOut = 10;
