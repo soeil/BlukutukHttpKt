@@ -193,7 +193,9 @@ class BlukutukHttp {
             responseCode = 999
             responseMessage = code("" + responseCode)
 
-            blukutukFail?.result(responseCode, responseMessage)
+            activity?.let { activity ->
+                activity.runOnUiThread { blukutukFail?.result(responseCode, responseMessage) }
+            }
 
             return
         }
@@ -215,10 +217,14 @@ class BlukutukHttp {
                     responseCode = 999
                     responseMessage = code("" + responseCode) + ". " + jsonException
 
-                    blukutukFail?.result(responseCode, responseMessage)
+                    activity?.let { activity ->
+                        activity.runOnUiThread { blukutukFail?.result(responseCode, responseMessage) }
+                    }
                 } else {
                     result?.let { jsonObject ->
-                        blukutukJsonObject?.result(jsonObject)
+                        activity?.let { activity ->
+                            activity.runOnUiThread { blukutukJsonObject?.result(jsonObject) }
+                        }
                     }
                 }
             }
@@ -239,10 +245,14 @@ class BlukutukHttp {
                     responseCode = 999
                     responseMessage = code("" + responseCode) + ". " + jsonException
 
-                    blukutukFail?.result(responseCode, responseMessage)
+                    activity?.let { activity ->
+                        activity.runOnUiThread { blukutukFail?.result(responseCode, responseMessage) }
+                    }
                 } else {
                     result?.let { jsonArray ->
-                        blukutukJsonArray?.result(jsonArray)
+                        activity?.let { activity ->
+                            activity.runOnUiThread { blukutukJsonArray?.result(jsonArray) }
+                        }
                     }
                 }
             }
@@ -251,15 +261,21 @@ class BlukutukHttp {
                 val gson = Gson()
                 val modelResult = gson.fromJson<Any>(data, model as Type)
 
-                blukutukModel?.result(Primitives.wrap(model).cast(modelResult))
+                activity?.let { activity ->
+                    activity.runOnUiThread { blukutukModel?.result(Primitives.wrap(model).cast(modelResult)) }
+                }
             }
 
         } else {
             if (blukutukFail != null) {
                 if (responseMessage == "Exception") {
-                    blukutukFail?.result(responseCode, code("" + responseCode))
+                    activity?.let { activity ->
+                        activity.runOnUiThread { blukutukFail?.result(responseCode, code("" + responseCode)) }
+                    }
                 } else {
-                    blukutukFail?.result(responseCode, responseMessage)
+                    activity?.let { activity ->
+                        activity.runOnUiThread { blukutukFail?.result(responseCode, responseMessage) }
+                    }
                 }
             }
         }
@@ -314,7 +330,9 @@ class BlukutukHttp {
                     override fun before() {
                         if (checkView()) {
 //                            progressDialog?.show()
-                            progressBar?.visibility = View.VISIBLE
+                            activity?.let { activity ->
+                                activity.runOnUiThread { progressBar?.visibility = View.VISIBLE }
+                            }
                         }
                     }
 
@@ -360,8 +378,7 @@ class BlukutukHttp {
                                 processResult(o)
 
 //                            progressDialog?.dismiss()
-
-                                progressBar?.visibility = View.GONE
+                                activity.runOnUiThread { progressBar?.visibility = View.GONE }
 
                             }
                         }
@@ -375,7 +392,7 @@ class BlukutukHttp {
         var isInternetAvailable = true
         activity?.let { activity ->
             if (!Network.isNetworkAvailable(activity)) {
-                blukutukFail?.result(900, code("900"))
+                activity.runOnUiThread { blukutukFail?.result(900, code("900")) }
 
                 isInternetAvailable = false
             }
@@ -386,7 +403,9 @@ class BlukutukHttp {
                     override fun before() {
                         if (checkView()) {
 //                            progressDialog?.show()
-                            progressBar?.visibility = View.VISIBLE
+                            activity?.let { activity ->
+                                activity.runOnUiThread { progressBar?.visibility = View.VISIBLE }
+                            }
                         }
                     }
 
@@ -406,13 +425,19 @@ class BlukutukHttp {
                     override fun after(o: Any) {
                         if (checkView()) {
                             if (o == "1") {
-                                blukutukDownload?.success()
+                                activity?.let { activity ->
+                                    activity.runOnUiThread { blukutukDownload?.success() }
+                                }
                             } else {
-                                blukutukDownload?.failed(responseCode, responseMessage)
+                                activity?.let { activity ->
+                                    activity.runOnUiThread { blukutukDownload?.failed(responseCode, responseMessage) }
+                                }
+
                             }
 
-                            progressBar?.visibility = View.GONE
-
+                            activity?.let { activity ->
+                                activity.runOnUiThread { progressBar?.visibility = View.GONE }
+                            }
                         }
 
                     }

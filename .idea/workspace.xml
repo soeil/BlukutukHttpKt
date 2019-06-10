@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ccbd3607-a782-431f-8dcf-626d36519910" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blukutukhttp/src/main/java/com/robinyonathan/blukutukhttp/BlukutukHttp.kt" beforeDir="false" afterPath="$PROJECT_DIR$/blukutukhttp/src/main/java/com/robinyonathan/blukutukhttp/BlukutukHttp.kt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -28,8 +27,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/blukutukhttp/src/main/java/com/robinyonathan/blukutukhttp/BlukutukHttp.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="575">
-              <caret line="311" column="45" selection-start-line="311" selection-start-column="45" selection-end-line="311" selection-end-column="45" />
+            <state relative-caret-position="379">
+              <caret line="400" column="48" lean-forward="true" selection-start-line="400" selection-start-column="48" selection-end-line="400" selection-end-column="48" />
               <folding>
                 <element signature="e#66#1089#0" expanded="true" />
               </folding>
@@ -162,6 +161,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="android.sdk.path" value="$USER_HOME$/Android/Sdk" />
+    <property name="device.picker.selection" value="91755e95" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="not.eligible.for.single.variant.sync" value="true" />
     <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
@@ -264,7 +264,7 @@
     <editor active="true" />
     <layout>
       <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
-      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.222333" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.222333" />
       <window_info id="Structure" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Build Variants" order="4" side_tool="true" />
@@ -400,8 +400,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/blukutukhttp/src/main/java/com/robinyonathan/blukutukhttp/BlukutukHttp.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="575">
-          <caret line="311" column="45" selection-start-line="311" selection-start-column="45" selection-end-line="311" selection-end-column="45" />
+        <state relative-caret-position="379">
+          <caret line="400" column="48" lean-forward="true" selection-start-line="400" selection-start-column="48" selection-end-line="400" selection-end-column="48" />
           <folding>
             <element signature="e#66#1089#0" expanded="true" />
           </folding>
