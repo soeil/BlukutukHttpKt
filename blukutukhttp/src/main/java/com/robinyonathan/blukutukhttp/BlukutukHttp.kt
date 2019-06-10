@@ -309,7 +309,7 @@ class BlukutukHttp {
             }
         }
         if (isInternetAvailable) {
-            GlobalScope.launch(Dispatchers.Main) {
+            GlobalScope.launch(Dispatchers.IO) {
                 okHttp(object : OkHttpInterface {
                     override fun before() {
                         if (checkView()) {
@@ -381,7 +381,7 @@ class BlukutukHttp {
             }
         }
         if (isInternetAvailable) {
-            GlobalScope.launch(Dispatchers.Main) {
+            GlobalScope.launch(Dispatchers.IO) {
                 okHttpDownload(object : OkHttpInterface {
                     override fun before() {
                         if (checkView()) {
