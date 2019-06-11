@@ -640,9 +640,7 @@ class BlukutukHttp {
             }
         }
 
-        if (!error) {
-            okHttpInterface.after(result)
-        }
+        okHttpInterface.after(result)
     }
 
     private suspend fun okHttpDownload(okHttpInterface: OkHttpInterface) {
