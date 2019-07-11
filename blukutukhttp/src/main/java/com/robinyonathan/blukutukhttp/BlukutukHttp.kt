@@ -319,8 +319,6 @@ class BlukutukHttp {
         var isInternetAvailable = false
         activity?.let { activity ->
             if (Network.isNetworkAvailable(activity)) {
-                blukutukFail?.result(900, code("900"))
-
                 isInternetAvailable = true
             }
         }
@@ -385,6 +383,8 @@ class BlukutukHttp {
                     }
                 })
             }
+        } else {
+            blukutukFail?.result(900, code("900"))
         }
     }
 
