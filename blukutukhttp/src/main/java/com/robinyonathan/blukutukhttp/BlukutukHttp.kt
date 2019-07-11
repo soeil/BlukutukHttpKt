@@ -316,12 +316,12 @@ class BlukutukHttp {
     }
 
     fun execute() {
-        var isInternetAvailable = true
+        var isInternetAvailable = false
         activity?.let { activity ->
-            if (!Network.isNetworkAvailable(activity)) {
+            if (Network.isNetworkAvailable(activity)) {
                 blukutukFail?.result(900, code("900"))
 
-                isInternetAvailable = false
+                isInternetAvailable = true
             }
         }
         if (isInternetAvailable) {
