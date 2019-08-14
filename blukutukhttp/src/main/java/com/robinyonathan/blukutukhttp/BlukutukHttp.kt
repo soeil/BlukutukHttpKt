@@ -8,6 +8,7 @@ import android.net.Uri
 import android.view.View
 import android.widget.ProgressBar
 import androidx.fragment.app.Fragment
+import com.bugsnag.android.Bugsnag
 import com.google.gson.Gson
 import com.google.gson.internal.Primitives
 import com.robinyonathan.blukutukhttp.coroutine.await
@@ -82,6 +83,9 @@ class BlukutukHttp {
         this.activity = activity
         this.builder = builder
         this.requestBody = requestBody
+        if (!activity.isDestroyed) {
+            Bugsnag.init(activity)
+        }
     }
 
     constructor(activity: Activity, builder: Uri.Builder, requestBody: RequestBody, bodyType: Int) {
@@ -89,18 +93,27 @@ class BlukutukHttp {
         this.builder = builder
         this.requestBody = requestBody
         this.bodyType = bodyType
+        if (!activity.isDestroyed) {
+            Bugsnag.init(activity)
+        }
     }
 
     constructor(activity: Activity, builder: Uri.Builder) {
         this.activity = activity
         this.builder = builder
         this.requestBody = null
+        if (!activity.isDestroyed) {
+            Bugsnag.init(activity)
+        }
     }
 
     constructor(activity: Activity, url: String, requestBody: RequestBody) {
         this.activity = activity
         this.url = url
         this.requestBody = requestBody
+        if (!activity.isDestroyed) {
+            Bugsnag.init(activity)
+        }
     }
 
     constructor(activity: Activity, url: String, requestBody: RequestBody, bodyType: Int) {
@@ -108,12 +121,18 @@ class BlukutukHttp {
         this.url = url
         this.requestBody = requestBody
         this.bodyType = bodyType
+        if (!activity.isDestroyed) {
+            Bugsnag.init(activity)
+        }
     }
 
     constructor(activity: Activity, url: String) {
         this.activity = activity
         this.url = url
         this.requestBody = null
+        if (!activity.isDestroyed) {
+            Bugsnag.init(activity)
+        }
     }
 
 //    fun useProgressDialog(message: String) {

@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.bugsnag:bugsnag-plugin-android-anr:4.17.2@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/9b21fe3a7e72e1501500dd77eedd15e2/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/9b21fe3a7e72e1501500dd77eedd15e2/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.bugsnag/bugsnag-plugin-android-anr/4.17.2/8e7e2fd88c640335199956c07e93b700129aa131/bugsnag-plugin-android-anr-4.17.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
